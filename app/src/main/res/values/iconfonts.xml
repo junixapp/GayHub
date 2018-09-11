@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ic_close">&#xe86e;</string>
+    <string name="ic_collect_empty">&#xe86f;</string>
+    <string name="ic_collect_fill">&#xe86d;</string>
+    <string name="ic_search">&#xe870;</string>
+    <string name="ic_share">&#xe871;</string>
+    <string name="ic_message">&#xe872;</string>
+    <string name="ic_like_fill">&#xe873;</string>
+    <string name="ic_like_empty">&#xe874;</string>
+    <string name="ic_zan_fill">&#xe875;</string>
+    <string name="ic_zan_empty">&#xe876;</string>
+    <string name="ic_take_photo">&#xe877;</string>
+    <string name="ic_arrow_down">&#xe87e;</string>
+    <string name="ic_arrow_up">&#xe894;</string>
+    <string name="ic_email">&#xe888;</string>
+    <string name="ic_filter">&#xe889;</string>
+    <string name="ic_add">&#xe88a;</string>
+    <string name="ic_attachment">&#xe88b;</string>
+    <string name="ic_more">&#xe88c;</string>
+    <string name="ic_return_top">&#xe88d;</string>
+    <string name="ic_arrow_right">&#xe88f;</string>
+    <string name="ic_arrow_left">&#xe8b5;</string>
+    <string name="ic_list">&#xe890;</string>
+    <string name="ic_toc">&#xe891;</string>
+    <string name="ic_scan">&#xe893;</string>
+    <string name="ic_top_line">&#xe895;</string>
+    <string name="ic_setting">&#xe896;</string>
+    <string name="ic_exit">&#xe897;</string>
+    <string name="ic_faq">&#xe898;</string>
+    <string name="ic_discover">&#xe899;</string>
+    <string name="ic_detail">&#xe8a0;</string>
+    <string name="ic_feedback">&#xe8a2;</string>
+    <string name="ic_help">&#xe8a3;</string>
+    <string name="ic_right">&#xe8ad;</string>
+    <string name="ic_sort">&#xe8e6;</string>
+</resources>

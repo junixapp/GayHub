@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:orientation="vertical">
+
+    <!--titlebar area-->
+    <com.lxj.gayhub.ui.widget.TitleBar style="@style/match_wrap" android:id="@+id/titlebar"/>
+
+    <!--content area-->
+    <FrameLayout style="@style/match_match" android:id="@+id/container"/>
+
+</LinearLayout>

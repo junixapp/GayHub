@@ -7,9 +7,7 @@
     android:orientation="vertical"
     tools:context=".ui.act.MainActivity">
 
-    <com.lxj.gayhub.ui.widget.TitleBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+
 
 
 </LinearLayout>
