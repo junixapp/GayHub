@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/dp40"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_marginTop="@dimen/dp30"
+        android:id="@+id/tv_big"
+        android:textColor="@android:color/white"
+        android:textSize="48sp"
+        android:text="@string/splash_big_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="@dimen/dp40"
+        android:textColor="@color/sub_white"
+        android:textSize="22sp"
+        android:id="@+id/tv_small"
+        android:lineSpacingExtra="@dimen/dp6"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/dp30"
+        android:alpha="0"
+        android:layout_marginTop="@dimen/dp30"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:text="@string/splash_small_txt2"
+        android:id="@+id/tv_small2"
+        android:lineSpacingExtra="@dimen/dp6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

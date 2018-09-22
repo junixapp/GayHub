@@ -1,43 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/dp40"
+    android:layout_height="@dimen/dp46"
     android:background="@color/colorPrimary"
-    android:elevation="5dp"
+    android:elevation="@dimen/dp12"
     android:gravity="center_vertical"
     android:paddingLeft="@dimen/dp12"
-    android:paddingRight="@dimen/dp12"
-    android:paddingTop="@dimen/dp10"
-    android:paddingBottom="@dimen/dp10">
+    android:paddingRight="@dimen/dp12">
 
     <com.lxj.gayhub.ui.widget.IconFontView
-        style="@style/wrap_wrap"
+        android:id="@+id/page_title"
+        style="@style/wrap_match"
         android:gravity="center_vertical"
         android:text="@string/app_name"
         android:textColor="@android:color/white"
-        android:textSize="@dimen/large_title" />
+        android:textSize="@dimen/text18" />
 
     <Space style="@style/weight1_match"/>
 
     <com.lxj.gayhub.ui.widget.IconFontView
-        style="@style/wrap_wrap"
-        android:gravity="center_vertical"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/large_title"
+        style="@style/TitlebarActionBtn"
         android:id="@+id/action1"
         />
     <com.lxj.gayhub.ui.widget.IconFontView
-        style="@style/wrap_wrap"
-        android:layout_marginLeft="@dimen/dp12"
-        android:gravity="center_vertical"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/large_title"
+        style="@style/TitlebarActionBtn"
         android:id="@+id/action2"/>
     <com.lxj.gayhub.ui.widget.IconFontView
-        style="@style/wrap_wrap"
-        android:layout_marginLeft="@dimen/dp12"
-        android:gravity="center_vertical"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/large_title"
+        style="@style/TitlebarActionBtn"
         android:id="@+id/action3"/>
 </LinearLayout>

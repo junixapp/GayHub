@@ -24,12 +24,29 @@ class TitleBar(context: Context?, attrs: AttributeSet?) : FrameLayout(context, a
         }
     }
 
-    fun addActionButton(actionBtn1: String = "",
-                        actionBtn2: String = "",
-                        actionBtn3: String = ""){
-        action1.text = actionBtn1
-        action2.text = actionBtn2
-        action3.text = actionBtn3
+    fun title(title: String){
+        page_title.text = title
+    }
+
+    fun hide(){
+        visibility = View.GONE
+    }
+
+    fun addActionButton(actionBtn1: String? = null,
+                        actionBtn2: String? = null,
+                        actionBtn3: String? = null){
+        if(actionBtn1!=null){
+            action1.text = actionBtn1
+            action1.visibility = View.VISIBLE
+        }
+        if(actionBtn2!=null){
+            action2.text = actionBtn2
+            action2.visibility = View.VISIBLE
+        }
+        if(actionBtn3!=null){
+            action3.text = actionBtn3
+            action3.visibility = View.VISIBLE
+        }
     }
 
     interface OnActionClickListener{

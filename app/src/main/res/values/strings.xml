@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">GayHub</string>
+    <string name="hint_username">type your username</string>
+    <string name="hint_password">type your password</string>
+    <string name="login">Login</string>
+    <string name="splash_big_txt">Built for \ndevelopers</string>
+    <string name="splash_small_txt2">Welcome home, \ndevelopers</string>
+    <string name="splash_small_txt">
+        GitHub is a development platform \ninspired by the way you work. \nFrom open source to business, \nyou can host and review code, \nmanage projects, build software.
+    </string>
 </resources>
