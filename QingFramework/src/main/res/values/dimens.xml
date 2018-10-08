@@ -8,12 +8,6 @@
     <dimen name="dp16">16dp</dimen>
     <dimen name="dp45">45dp</dimen>
     <dimen name="dp40">40dp</dimen>
-
-    <dimen name="text20">20sp</dimen>
-    <dimen name="text18">18sp</dimen>
-    <dimen name="text16">16sp</dimen>
-    <dimen name="text14">14sp</dimen>
-    <dimen name="text12">12sp</dimen>
     <dimen name="dp2">2dp</dimen>
     <dimen name="dp42">42dp</dimen>
     <dimen name="dp44">44dp</dimen>
@@ -22,4 +16,12 @@
     <dimen name="dp24">24dp</dimen>
     <dimen name="dp26">26dp</dimen>
     <dimen name="dp30">30dp</dimen>
+
+    <!--font size-->
+    <dimen name="text28">28sp</dimen>
+    <dimen name="text20">20sp</dimen>
+    <dimen name="text18">18sp</dimen>
+    <dimen name="text16">16sp</dimen>
+    <dimen name="text14">14sp</dimen>
+    <dimen name="text12">12sp</dimen>
 </resources>
