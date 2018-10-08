@@ -1,8 +1,8 @@
 # GayHub
-A Github Android Client !
+A Github Android Client, use Android Development Best Practice !
 
 # Fetures
-- Github Trending
 - Login with Username&Password
+- Explore
 - Search
-- View user info
+- Account Info
