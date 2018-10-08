@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.act.MainActivity">
 
-<TextView
-    android:text="main"
-    android:textSize="30sp"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:checkedButton="@id/rb_see"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/dp45">
+        <com.lxj.gayhub.ui.widget.iconfont.IconFontRadioButton
+            android:id="@+id/rb_see"
+            android:text="@string/ic_see"
+            style="@style/main_tab_button" />
+        <com.lxj.gayhub.ui.widget.iconfont.IconFontRadioButton
+            android:id="@+id/rb_search"
+            android:text="@string/ic_search"
+            style="@style/main_tab_button"  />
+        <com.lxj.gayhub.ui.widget.iconfont.IconFontRadioButton
+            android:id="@+id/rb_me"
+            android:text="@string/ic_me"
+            style="@style/main_tab_button"  />
+    </RadioGroup>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

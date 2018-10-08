@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/dp12"
     android:paddingRight="@dimen/dp12">
 
-    <com.lxj.gayhub.ui.widget.IconFontView
+    <com.lxj.gayhub.ui.widget.iconfont.IconFontTextView
         android:id="@+id/page_title"
         style="@style/wrap_match"
         android:gravity="center_vertical"
@@ -18,14 +18,14 @@
 
     <Space style="@style/weight1_match"/>
 
-    <com.lxj.gayhub.ui.widget.IconFontView
+    <com.lxj.gayhub.ui.widget.iconfont.IconFontTextView
         style="@style/TitlebarActionBtn"
         android:id="@+id/action1"
         />
-    <com.lxj.gayhub.ui.widget.IconFontView
+    <com.lxj.gayhub.ui.widget.iconfont.IconFontTextView
         style="@style/TitlebarActionBtn"
         android:id="@+id/action2"/>
-    <com.lxj.gayhub.ui.widget.IconFontView
+    <com.lxj.gayhub.ui.widget.iconfont.IconFontTextView
         style="@style/TitlebarActionBtn"
         android:id="@+id/action3"/>
 </LinearLayout>

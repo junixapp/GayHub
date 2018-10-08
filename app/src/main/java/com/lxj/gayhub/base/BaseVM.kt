@@ -3,7 +3,6 @@ package com.lxj.gayhub.base
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.lxj.gayhub.vm.enum.UIState
-import org.jetbrains.anko.AnkoLogger
 
 /**
  * hold UI state and data,  process data&state then LiveData will notify UI update.
@@ -11,6 +10,6 @@ import org.jetbrains.anko.AnkoLogger
  * If you need Application/Context, maybe you need a AndroidViewModel,
  * or a global Application instance.
  */
-open class BaseVM: ViewModel(), AnkoLogger{
+open class BaseVM: ViewModel(){
     val uiState = MutableLiveData<UIState>()
 }

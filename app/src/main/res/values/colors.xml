@@ -3,7 +3,10 @@
     <color name="colorPrimary">#E64A19</color>
     <color name="colorPrimaryDark">#db3e0d</color>
     <color name="colorAccent">#db3e0d</color>
-    <color name="drak_gray">#333</color>
+    <color name="dark_gray">#333</color>
     <color name="gray">#888</color>
+    <color name="light_gray">#aaa</color>
     <color name="sub_white">#ddd</color>
+    <color name="main_tab_unchecked">#44ffffff</color>
+    <color name="main_tab_checked">#ffffff</color>
 </resources>

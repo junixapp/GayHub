@@ -8,4 +8,7 @@
     <string name="splash_small_txt">
         GitHub is a development platform \ninspired by the way you work. \nFrom open source to business, \nyou can host and review code, \nmanage projects, build software.
     </string>
+    <string-array name="titles">
+        <item>Explore</item>
+    </string-array>
 </resources>

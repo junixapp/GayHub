@@ -9,6 +9,7 @@ import com.lxj.gayhub.bean.UserInfo
 import com.lxj.gayhub.repository.cb.JsonCallback
 import com.lxj.gayhub.repository.config.Github
 import com.lxj.gayhub.repository.sp.SpHelper
+import com.lxj.gayhub.vm.LoginVM
 import com.lxj.gayhub.vm.enum.UIState
 import com.lzy.okgo.OkGo
 import com.lzy.okgo.model.Response
@@ -16,10 +17,9 @@ import com.lzy.okgo.request.base.Request
 import org.jetbrains.anko.info
 import org.json.JSONObject
 
-object LoginRepo : BaseRepo() {
-    lateinit var uiState: MutableLiveData<UIState>
+class LoginRepo(private val loginVM: LoginVM) : BaseRepo() {
 
-    fun login(username: String, password: String, userInfoData:  MutableLiveData<UserInfo>) {
+    fun login(username: String, password: String) {
         // Basic authorization
         val userCredentials = username.trim() + ":" + password.trim()
         val basicAuth = "Basic " + String(Base64.encode(userCredentials.toByteArray(), Base64.DEFAULT))
@@ -35,32 +35,31 @@ object LoginRepo : BaseRepo() {
                 .upJson(JSONObject(map)) // body params
                 .execute(object : JsonCallback<AuthInfo>() {
                     override fun onStart(request: Request<AuthInfo, out Request<Any, Request<*, *>>>?) {
-                        uiState.value = UIState.Loading
+                        loginVM.loginState.value = UIState.Loading
                     }
                     override fun onSuccess(response: Response<AuthInfo>) {
                         val authInfo = response.body()
                         //save token to sp
                         SpHelper.sp.edit { putString(SpHelper.KeyToken, authInfo.token) }
 
-                        getUserInfo(username, userInfoData)
+                        getUserInfo(username)
                     }
 
                 })
     }
 
-    fun getUserInfo(username: String, userInfoData:  MutableLiveData<UserInfo>){
+    fun getUserInfo(username: String){
         OkGo.get<UserInfo>(Github.UserInfo.format(username))
                 .tag(this)
                 .execute(object :JsonCallback<UserInfo>(){
                     override fun onError(response: Response<UserInfo>?) {
-                        uiState.value = UIState.Error
+                        loginVM.loginState.value = UIState.Error
                     }
                     override fun onSuccess(response: Response<UserInfo>) {
-                        uiState.value = UIState.Success
                         //save user
                         SpHelper.sp.edit { putString(SpHelper.KeyUserInfo, response.body().toJson()) }
-
-                        userInfoData.value = response.body()
+                        loginVM.userInfoData.value = response.body()
+                        loginVM.loginState.value = UIState.Success
                     }
                 })
     }
